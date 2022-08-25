@@ -48,7 +48,7 @@ namespace Model
         #region Data handling
         static (List<Constituency>, List<Party>) ReadData(string path)
         {
-            List<Constituency> outputConsts = new List<Constituency>();
+            List<Constituency> outputConstituencies = new List<Constituency>();
             List<Party> outputParties = new List<Party>();
             // Many thanks to Alexander Yumashev and editors for this CSV tip-off.
             // Attribution link: https://stackoverflow.com/a/20523165.
@@ -77,11 +77,11 @@ namespace Model
                             Name = entry[0],
                             Region = entry[1]
                         };
-                        outputConsts.Add(newConstituency);
+                        outputConstituencies.Add(newConstituency);
                     }
                 }
             }
-            return (outputConsts, outputParties);
+            return (outputConstituencies, outputParties);
         }
         #endregion
     }
