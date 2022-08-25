@@ -70,6 +70,18 @@ namespace Model
         #endregion Public variables
 
         #region Data read and model construction
+        /// <summary>
+        /// Prepares the data input for the <c>Run()</c> procedure in conversion to dictionary format.
+        /// </summary>
+        /// <param name="data">A list of constituencies that forms the base electoral data.</param>
+        /// <returns>A dictionary of all constituencies, with party set in all cases to <c>NULL</c>. Returned data must be <c>Run()</c> before useful.</returns>
+        private void InputPreparation(List<Constituency> data)
+        {
+            foreach (Constituency constituency in data)
+            {
+                Add(constituency, null);
+            }
+        }
         #endregion
 
         #region Model logic
