@@ -25,5 +25,16 @@ namespace Model.Models
 {
     class Constituency
     {
+        #region Constructor
+        public Constituency()
+        {
+
+        }
+        #endregion
+
+        #region Public variables
+        public string Name { get; set; }
+        public string Region { get; set; }
+        #endregion
     }
 }

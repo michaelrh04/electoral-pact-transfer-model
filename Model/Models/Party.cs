@@ -25,5 +25,15 @@ namespace Model.Models
 {
     class Party
     {
+        #region Constructor
+        public Party()
+        {
+
+        }
+        #endregion
+
+        #region Public variables
+        public string Name { get; set; }
+        #endregion
     }
 }
