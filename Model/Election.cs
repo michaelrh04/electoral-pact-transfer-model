@@ -34,12 +34,13 @@ namespace Model
     {
         #region Constructor
         /// <summary>
-        /// Constructor for the Election class. Requires data parameter.
+        /// Constructor for the Election class. Requires a data parameter. This class represents one election.
         /// </summary>
-        /// <param name="data">A csv-format string of the base electoral data.</param>
-        /// <param name="pacts"></param>
-        public Election(string data, Party[,] pacts = null)
+        /// <param name="data">A list of constituencies that forms the base electoral data.</param>
+        /// <param name="alliances">A two-dimensional array of all party alliances.</param>
+        public Election(List<Constituency> data, Party[,] alliances = null)
         {
+            InputPreparation(data);
         }
         #endregion
 
