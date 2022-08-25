@@ -21,12 +21,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 using Model.Models;
 
 namespace Model
 {
-    class Election : Dictionary<string, List<Tuple<Party, int>>>
+    /// <summary>
+    /// <para>Class for the operation of elections.
+    /// Inherits dictionary data structure: note the structure of
+    /// <c>CONSTITUENCY, PARTY_OF_VICTOR.</c></para>
+    /// </summary>
+    class Election : Dictionary<Constituency, Party>
     {
     }
 }
