@@ -32,6 +32,7 @@ namespace Model
     /// </summary>
     class Election : Dictionary<Constituency, Party>
     {
+        #region Constructor
         /// <summary>
         /// Constructor for the Election class. Requires data parameter.
         /// </summary>
@@ -40,5 +41,16 @@ namespace Model
         public Election(string data, Party[,] pacts = null)
         {
         }
+        #endregion
+
+        #region Public variables
+        #endregion Public variables
+
+        #region Data read and model construction
+        #endregion
+
+        #region Model logic
+        #endregion
+
     }
 }
