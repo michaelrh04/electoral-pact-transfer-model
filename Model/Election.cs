@@ -55,10 +55,9 @@ namespace Model
                 var outcome = new Dictionary<Party, int>();
                 foreach (KeyValuePair<Constituency, Party> constituencyResult in this)
                 {
-                    outcome[constituencyResult.Value] += 1;
                     try
                     {
-
+                        outcome[constituencyResult.Value] += 1;
                     }
                     catch (KeyNotFoundException)
                     {
