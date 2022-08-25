@@ -32,5 +32,13 @@ namespace Model
     /// </summary>
     class Election : Dictionary<Constituency, Party>
     {
+        /// <summary>
+        /// Constructor for the Election class. Requires data parameter.
+        /// </summary>
+        /// <param name="data">A csv-format string of the base electoral data.</param>
+        /// <param name="pacts"></param>
+        public Election(string data, Party[,] pacts = null)
+        {
+        }
     }
 }
