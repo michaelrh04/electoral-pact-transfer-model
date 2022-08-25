@@ -9,7 +9,7 @@
  * the top-level directory of this distribution and at 
  * https://github.com/michaelrh04/electoral-pact-transfer-model. 
  * 
- * No part of lectoral-pact-transfer-model, including this file, 
+ * No part of electoral-pact-transfer-model, including this file, 
  * may be copied, modified, propagated, or distributed except 
  * according to the terms contained in the LICENSE file.
  * 
@@ -28,7 +28,7 @@ namespace Model.Models
         #region Constructor
         public Constituency()
         {
-
+            // Logic awaiting implementation.
         }
         #endregion
 
