@@ -44,6 +44,29 @@ namespace Model
         #endregion
 
         #region Public variables
+        /// <summary>
+        /// A value that represents the outcome of this election in a dictionary <c>PARTY, SEATS</c> format.
+        /// </summary>
+        public Dictionary<Party, int> Outcome
+        {
+            get
+            {
+                var outcome = new Dictionary<Party, int>();
+                foreach (KeyValuePair<Constituency, Party> constituencyResult in this)
+                {
+                    outcome[constituencyResult.Value] += 1;
+                    try
+                    {
+
+                    }
+                    catch (KeyNotFoundException)
+                    {
+                        outcome.Add(constituencyResult.Value, 1);
+                    }
+                }
+                return outcome;
+            }
+        }
         #endregion Public variables
 
         #region Data read and model construction
