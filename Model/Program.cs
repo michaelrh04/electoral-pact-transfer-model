@@ -34,8 +34,12 @@ namespace Model
         /// <param name="args">Any init arguments (datatype of argument is object).</param>
         static void Main(string[] args)
         {
+            var path = /*INSERT PATH OF DATASET*/;
+            Console.WriteLine(path);
+            (data_ListOfConstituencies, data_ListOfParties) = ReadData(path);
         }
         #endregion
+
         #region Static variables
         static List<Constituency> data_ListOfConstituencies;
         static List<Party> data_ListOfParties;
