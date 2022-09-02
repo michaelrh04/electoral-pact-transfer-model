@@ -1,5 +1,4 @@
-﻿
-/*
+﻿/*
  * COPYRIGHT (C) 2022 MICHAEL HARGREAVES 
  * ALL RIGHTS RESERVED
  * contact@michaelrh04.co.uk
